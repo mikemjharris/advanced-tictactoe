@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+  font-family: Verdana;
+}
+
+.master_game_container{
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.game_container {
+  width: 230px;
+  padding: 10px;
+  font-size: 0px;
+  display: inline-block;
+}
+
+.board_square {
+  width: 70px;
+  height: 70px;
+  font-size: 16px;
+  /*display: inline-block;*/
+  float: left;
+  border: 1px solid black;
+}
+.winning_square {
+  font-size: 32px;
+  float: left;
+  height: 210px;
+  width: 210px;
+  line-height: 210px;
+}
+.board_to_play {
+  outline: 10px solid red;
+}
+
+.message {
+  /*margin-bottom: 40px;*/
+}
+.played {
+  line-height: 70px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+
+}
+.can_play {
+  line-height: 70px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+
+}
