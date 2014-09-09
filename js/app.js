@@ -31,13 +31,10 @@
     $scope.playSquare = function(game_id, square_id) {
       $scope.masterGame.games["game" + game_id].squares["square" + square_id] = $scope.nextPlayer
       if($scope.checkWinner($scope.masterGame.games["game" + game_id].squares)) {
-        console.log("winner")
         $scope.masterGame.squares["square" + game_id] = $scope.nextPlayer
         $scope.messageWinner =  $scope.nextPlayer + "'s won square " + (game_id + 1)
 
         if($scope.checkWinner($scope.masterGame.squares)) {
-            console.log("Big winner")
-
             $scope.messageWinner = $scope.nextPlayer + " won!"
             $scope.masterGame.winner = $scope.nextPlayer
         }
@@ -84,7 +81,7 @@
   }
 
   $scope.canPlayBig = function(game_id) {
-      console.log($scope.nextBigSquare)
+      
      if(game_id == $scope.nextBigSquare || $scope.nextBigSquare === "") {
       return true
     } else {
@@ -117,7 +114,7 @@ winingPositions = [ [0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7],[2,5,8], [0,4,8]
 
 $(document).ready(function() {
 
-  console.log("hi")
+  
   $('.cont').on('click', function() {
     $('main').toggleClass('three_d')
 
@@ -133,6 +130,7 @@ $(document).ready(function() {
 
   $('#up').on('mousedown' , function () {
     moveBox(1,20)
+    
   })
 
   $('#down').on('mousedown' , function () {
