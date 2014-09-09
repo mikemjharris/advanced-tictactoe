@@ -2,5 +2,5 @@
   <div class="board_square" ng-repeat="square in game.squares">
       <div ng-show="square == 'O'" class="played">O</div>
       <div ng-show="square == 'X'" class="played">X</div>
-      <div ng-hide="square" ng-click="canPlayBig(game.id) && playSquare(game.id, $index)" class="can_play"></div>
+      <div ng-hide="square" ng-click="canPlay(game.id, $index)" class="can_play"></div>
   </div>
