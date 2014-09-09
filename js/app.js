@@ -118,6 +118,11 @@ $(document).ready(function() {
 
   $('.cont').on('click', function() {
     $('main').toggleClass('three_d')
+    if ($('.cont').text() == "Go 3D") {
+        $('.cont').text("Go 2D")
+    } else {
+        $('.cont').text("Go 3D")
+    }
 
   })
   var moveBox = function(axis, amount) {
@@ -139,11 +144,11 @@ $(document).ready(function() {
   })
 
     $('#left').on('mousedown' , function () {
-     moveBox(0,-twist)
+     moveBox(0,twist)
   })
 
   $('#right').on('mousedown' , function () {
-     moveBox(0, twist)
+     moveBox(0, -twist)
   })
 
 
