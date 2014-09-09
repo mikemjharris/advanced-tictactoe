@@ -13,7 +13,7 @@ main{
 }
 .holder {
   display: inline-block;
-  transition: all 4s;
+  transition: all 1s;
   perspective: 1000px;
   perspective-origin: -50% 60%;  
 }
@@ -69,6 +69,7 @@ main{
     /*border: 1px solid black;*/
     /*transform: translateZ(200px);*/
     perspective: 1000px;
+    transition: all 0.1s;
     perspective-origin: -50% 60%;   
     /*transform-style: preserve-3d;*/
 }

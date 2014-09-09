@@ -114,7 +114,8 @@ winingPositions = [ [0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7],[2,5,8], [0,4,8]
 
 $(document).ready(function() {
 
-  
+  var twist = 100
+
   $('.cont').on('click', function() {
     $('main').toggleClass('three_d')
 
@@ -129,20 +130,20 @@ $(document).ready(function() {
   }
 
   $('#up').on('mousedown' , function () {
-    moveBox(1,20)
+    moveBox(1,twist)
     
   })
 
   $('#down').on('mousedown' , function () {
-     moveBox(1,-20)
+     moveBox(1,-twist)
   })
 
     $('#left').on('mousedown' , function () {
-     moveBox(0,-20)
+     moveBox(0,-twist)
   })
 
   $('#right').on('mousedown' , function () {
-     moveBox(0, 20)
+     moveBox(0, twist)
   })
 
 
